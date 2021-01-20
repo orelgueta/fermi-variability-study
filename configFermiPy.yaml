@@ -1,0 +1,40 @@
+data:
+  evfile : /lustre/fs19/group/cta/users/thassan/LAT/weekly/photon/lat_zmax90_gt200mev.fits
+  scfile : /lustre/fs19/group/cta/users/thassan/LAT/weekly/spacecraft/lat_spacecraft_merged.fits
+  ltcube : /lustre/fs19/group/cta/users/thassan/LAT/weekly/photon/lat_zmax90_gt200mev_ltcube.fits
+
+binning:
+  roiwidth   : 10.0
+  binsz      : 0.1
+  binsperdec : 8
+
+selection :
+  emin : 200
+  emax : 300000
+  zmax    : 90
+  evclass : 128
+  evtype  : 3
+  # tmin    : 239557417
+  # tmax    : 566352005
+  # tmax    : 999999999
+  # tmax    : 526176005 # FIXME change back to take full period!
+  # tmin    : 405216003
+  # tmax    : 422496003
+  tmin: 532224005 # For TON599
+  tmax: 537408005 # For TON599
+  filter  : null
+  target : 'target'
+
+gtlike:
+  edisp : True
+  irfs : 'P8R2_SOURCE_V6'
+  edisp_disable : ['isodiff','galdiff']
+
+model:
+  src_roiwidth : 15.0
+  galdiff  : '/lustre/fs19/group/cta/users/ogueta/fermi/models/gll_iem_v06.fits'
+  isodiff  : 'iso_P8R2_SOURCE_V6_v06.txt'
+  catalogs : ['FL8Y']
+
+fileio:
+   outdir : 'target'

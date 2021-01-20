@@ -1,0 +1,33 @@
+
+title: 'target'
+
+redoSetup: False
+
+doFit: True
+
+plotMaps: True
+
+studyExtension: False
+
+doSed: True
+
+doLC: True
+
+loadRoi: True
+
+loadSed: False
+
+mergeBins: False
+
+# lcBins: [1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 13, 14, 16, 18, 20, 22, 24, 26, 28]
+lcBins: [1, 2, 3]
+# lcBins: [4, 5, 6, 7, 8, 10, 12, 14, 18, 24, 28]
+# lcBins: [182,  365]
+# lcBins: 28
+# lcBins: 182
+# lcBins: 365
+
+verbosity: 3
+
+cpuTime: '08:00:00'
+threads: 6

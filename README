@@ -1,0 +1,19 @@
+####################################
+# instructions how to run:
+####################################
+
+# Activate the FermiPy framework with
+
+source activate fermi
+
+####################################
+
+# Prepare directories for each source (in cwd)
+
+python anal.py prepareSources configFermiPy.yaml configAnal.yaml
+
+####################################
+
+# Submit analysis to farm
+
+python anal.py submitSources configFermiPy.yaml configAnal.yaml
